@@ -2,7 +2,7 @@ import telebot
 import os
 
 # التوكن الخاص بك (تأكدي من وضعه هنا)
-TOKEN = '8803208419:AAGzaQkjqs1YbB4hIsFz3Fn9IJUAW1QHZfY'
+TOKEN = os.environ.get('TOKEN')
 bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(func=lambda message: True)
